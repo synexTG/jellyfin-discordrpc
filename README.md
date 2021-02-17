@@ -7,7 +7,7 @@ Current features:
   - Show Series name with Season and Episode number
   - It checks the user with an api request so it does not matter on which device the user is watching stuff.
 
-Download it [here](https://ts.tricitygaming.de/JellyfinDiscordRPCv3.zip)
+Current release: https://github.com/synexTG/jellyfin-discordrpc/releases
 
 ### Installation
 
