@@ -7,7 +7,7 @@ Current features:
   - Show Series name with Season and Episode number
   - It checks the user with an api request so it does not matter on which device the user is watching stuff.
 
-Current release: https://github.com/synexTG/jellyfin-discordrpc/releases
+{Click here to download the current release](https://github.com/synexTG/jellyfin-discordrpc/releases)
 
 ### Installation
 
@@ -36,3 +36,7 @@ Also the app name in this screenshot is "Jellyfin" so whatever your app name is 
 
 ![](https://i.imgur.com/6Mf8dr6.png)
 
+### Used NuGet Packages:
+1. [DiscordRichPresence (Version: 1.0.175)](https://www.nuget.org/packages/DiscordRichPresence/)
+2. [Newtonsoft.Json (Version: 12.0.3)](https://www.nuget.org/packages/Newtonsoft.Json/)
+3. [RestSharp (Version: 106.11.7)](https://www.nuget.org/packages/RestSharp/)
