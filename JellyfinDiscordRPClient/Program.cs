@@ -114,7 +114,7 @@ namespace JellyfinDiscordRPClient
                                         Assets = new Assets()
                                         {
                                             LargeImageKey = "image_large",
-                                            LargeImageText = "Image Large Text",
+                                            LargeImageText = "Jellyfin Media System",
                                             SmallImageKey = "image_small"
                                         }
                                     });
