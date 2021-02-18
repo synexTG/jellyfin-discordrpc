@@ -17,7 +17,7 @@ It requires .NET Framework 4.5.2 or higher.
 3. Click on "Send to" -> "Desktop (create shortcut)"
 4. Press WIN+R and enter "shell:startup"
 5. Move the created Desktop Shortcut into the start up folder
-6. Another way is to use the Task Scheduler and create a Task.
+6. Another way is to use the Task Scheduler and create a Task (Do not forget to set the working directory).
 
 ### Required settings
 To get the software work correctly you must enter your
