@@ -39,6 +39,7 @@ namespace JellyfinDiscordRPClient
             static string jellyfin_apikey = "";
             static string discord_appid = "";
             static string jellyfin_username = "";
+            static string image_large_text = "";
 
             public MyCustomApplicationContext()
             {
@@ -46,6 +47,12 @@ namespace JellyfinDiscordRPClient
                 jellyfin_apikey = File.ReadLines("settings.conf").Skip(1).Take(1).First().Replace("jellyfin_apikey = ", "");
                 discord_appid = File.ReadLines("settings.conf").Skip(2).Take(1).First().Replace("discord_appid = ", "");
                 jellyfin_username = File.ReadLines("settings.conf").Skip(3).Take(1).First().Replace("jellyfin_username = ", "");
+                image_large_text = File.ReadLines("settings.conf").Skip(4).Take(1).First().Replace("image_large_text = ", "");
+                if(image_large_text.Equals("{{IMAGE_POPUP_TEXT}}"))
+                {
+                    image_large_text = "Jellyfin Media System";
+                }
+
                 // Initialize Tray Icon
                 trayIcon = new NotifyIcon()
                 {
@@ -114,7 +121,7 @@ namespace JellyfinDiscordRPClient
                                         Assets = new Assets()
                                         {
                                             LargeImageKey = "image_large",
-                                            LargeImageText = "Jellyfin Media System",
+                                            LargeImageText = image_large_text,
                                             SmallImageKey = "image_small"
                                         }
                                     });
@@ -128,7 +135,7 @@ namespace JellyfinDiscordRPClient
                                         Assets = new Assets()
                                         {
                                             LargeImageKey = "image_large",
-                                            LargeImageText = "Image Large Text",
+                                            LargeImageText = image_large_text,
                                             SmallImageKey = "image_small"
                                         }
                                     });
