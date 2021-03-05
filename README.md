@@ -1,4 +1,4 @@
-# Jellyfin Discord RPC
+# Jellyfin Discord RPC (Currently only in German configurable Names will come soon)
 
 This software is made to be used as an Task or in connection with the Start Up Folder.
 
